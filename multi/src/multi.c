@@ -13,6 +13,7 @@
 #include <string.h>
 #include <windows.h>
 
+//Function responsible for multiplication, which returns results in 2D array
 void multi(char * zm1, char * zm2)
 {
 	int size1 = strlen(zm1);
@@ -88,6 +89,7 @@ void multi(char * zm1, char * zm2)
 	}
 }
 
+//Final version of * function
 void multi2(char * zm1, char * zm2)
 {
 	int size1 = strlen(zm1);
@@ -95,7 +97,7 @@ void multi2(char * zm1, char * zm2)
 
 	int i = 0, j = 0, zmwynik = 0, k = 0, p = 1;
 
-	// tablica wynikowa
+	// Results table
 	char suma[size1+size2+1];
 	memset(suma,'0',size1+size2+1);
 	suma[size1+size2] = '\0';
